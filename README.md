@@ -8,10 +8,10 @@ A modern Pokedex application built with Next.js, powered by the custom `pokemon-
 - 📊 View detailed Pokemon statistics
 - 🎨 Modern, responsive UI
 - ⚡ Fast performance with Next.js
-- 🎮 Powered by custom pokemon-app-engine
+- 🎮 Powered by [pokemon-app-engine](https://github.com/flxtreme/pokemon-app-engine)
 
 ## Tech Stack
 
 - **Framework:** Next.js
-- **Engine:** pokemon-app-engine (custom implementation)
+- **Engine:** [pokemon-app-engine](https://github.com/flxtreme/pokemon-app-engine) - Custom Pokemon data engine powered by PokeAPI
 - **Language:** JavaScript/TypeScript
