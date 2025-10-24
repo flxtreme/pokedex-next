@@ -30,7 +30,7 @@ export default function DefaultLayout( props: DefaultLayoutProps ) {
               </button>
             )}
           </div>
-          <div className="font-bold text-lg text-center">
+          <div className="font-bold text-lg text-center text-black">
             Pokedex
           </div>
           <div className="flex-1 flex items-center justify-end">
@@ -54,7 +54,7 @@ export default function DefaultLayout( props: DefaultLayoutProps ) {
               Prev
             </button>
           </div>
-          <div className="font-bold text-lg text-center capitalize">
+          <div className="font-bold text-lg text-center capitalize text-black">
             { hasBack && title}
           </div>
           <div className="flex-1 flex items-center justify-end">

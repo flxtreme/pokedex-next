@@ -72,7 +72,7 @@ export default function RenderPokemon({ url, offset }: RenderPokemonProps) {
         </div>
       </div>
       <div className='text-xs border-t border-gray-200 py-1 font-medium capitalize px-2 w-full flex items-center justify-between'>
-        <span className='font-medium'>
+        <span className='font-medium text-black'>
           {pokemon.name}
         </span>
         <span className='text-gray-400 text-[10px]'>
