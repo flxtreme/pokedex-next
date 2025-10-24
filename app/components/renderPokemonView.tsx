@@ -57,13 +57,13 @@ export default function RenderPokemonView({ id, offset }: RenderPokemonViewProps
 
   const handleNext = () => {
     const nextId = Number(id) + 1;
-    router.push(`/pokemon/${nextId}?offset=${offset}`);
+    router.push(`/pokemon/?id=${nextId}&offset=${offset}`);
   };
 
   const handlePrev = () => {
     const prevId = Number(id) - 1;
     if (prevId > 0) {
-      router.push(`/pokemon/${prevId}?offset=${offset}`);
+      router.push(`/pokemon/?id=${prevId}&offset=${offset}`);
     }
   };
 
@@ -136,7 +136,7 @@ export default function RenderPokemonView({ id, offset }: RenderPokemonViewProps
                   return (
                     <div
                       key={typeSlot.slot}
-                      className="px-3 py-0.5 rounded-full min-w-20 text-center text-white font-bold text-xs shadow"
+                      className="px-3 py-0.5 rounded-full text-white font-bold text-xs shadow"
                       style={{ backgroundColor: color }}
                     >
                       <span className="capitalize">{typeName}</span>
@@ -160,7 +160,7 @@ export default function RenderPokemonView({ id, offset }: RenderPokemonViewProps
                   {weaknesses.map((type) => (
                     <div
                       key={type}
-                      className="px-3 py-0.5 rounded-full min-w-20 text-center text-white font-bold text-xs shadow"
+                      className="px-3 py-0.5 rounded-full text-white font-bold text-xs shadow"
                       style={{ backgroundColor: TYPE_COLORS[type] || "#999" }}
                     >
                       <span className="capitalize">{type}</span>
