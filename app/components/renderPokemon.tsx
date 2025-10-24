@@ -40,7 +40,7 @@ export default function RenderPokemon({ url, offset }: RenderPokemonProps) {
 
   return (
     <div 
-      onClick={()=> router.push(`/pokemon/${pokemon.id}?offset=${offset}`)} 
+      onClick={()=> router.push(`/pokemon/?id=${pokemon.id}&offset=${offset}`)} 
       className="bg-white rounded-md shadow-md overflow-hidden max-w-md border border-gray-200 hover:shadow-lg transition-shadow flex flex-col items-center justify-center"
     >
       {/* Pokemon Image */}

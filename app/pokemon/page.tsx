@@ -1,20 +1,15 @@
+
 "use client";
 
 import RenderPokemonView from "@/app/components/renderPokemonView";
 import { useSearchParams } from "next/navigation";
-import { use } from "react";
 
-interface PokemonViewProps {
-  params: Promise<{
-    id: string;
-  }>;
-}
 
-export default function PokemonView({ params }: PokemonViewProps) {
+export default function PokemonView() {
   const searchParams = useSearchParams();
-  const { id } = use(params);
 
   const offset = Number(searchParams.get('offset')) || 0;
+  const id = Number(searchParams.get('id'));
   
   return <RenderPokemonView id={id} offset={offset} />;
 }
