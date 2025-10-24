@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Suspense } from "react";
+import DefaultLayout from "./layouts/defaultLayout";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -29,7 +30,11 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} antialiased h-svh`}
       >
-        <Suspense fallback={<div>Loading ...</div>}>
+        <Suspense fallback={
+          <DefaultLayout title="Pokedex">
+            Loading ...
+          </DefaultLayout>
+        }>
           {children}
         </Suspense>
       </body>
