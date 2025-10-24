@@ -71,7 +71,7 @@ export default function RenderPokemonView({ id, offset }: RenderPokemonViewProps
     <DefaultLayout
       title={pokemon.name}
       next={handleNext}
-      prev={handlePrev}
+      prev={Number(id)-1 > 0 ? handlePrev : undefined}
       hasBack={true}
       offset={offset}
     >

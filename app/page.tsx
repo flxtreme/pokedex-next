@@ -48,7 +48,7 @@ export default function Home() {
     <DefaultLayout
       title="Pokedex"
       next={handleNext}
-      prev={handlePrev}
+      prev={offset > 0 ? handlePrev : undefined}
       offset={offset ?? 0}
     >
       <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
